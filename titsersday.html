@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY TEACHER'S DAY!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FRONT PAGE / WELCOME CARD -->
+    <div id="welcome-screen" class="card welcome-card">
+        <h1>Hello, welcome ma'am Circe!</h1>
+        <p class="date">October 5, 2026</p>
+        <p class="instruction">Click mo po ma'am yung button sa baba</p>
+        <button onclick="showCard()">Open your surprise</button>
+    </div>
+
+    <!-- MAIN CARD PAGE -->
+    <div id="card-screen" class="card hidden">
+        <h1>Happy Teacher's Day!</h1>
+
+        <div class="img-container">
+            <img src="circe.jpg" alt="Ma'am Circe">
+        </div>
+
+        <p class="subtitle">To our Values Education subject teacher,</p>
+
+        <p>Sa lahat ng lessons na itunuro niyo sa Valus Ed, hindi lang po yung nasa powerpoint ang natutunan 'ko. You teach us how to be kinder, more understanding, and better people. Minsan po, simple lang yung words niyo, pero may mga pagkakataong hindi namin namamalayan na dala-dala na pala namin yung lessons na 'yon outside the room.</p>
+
+        <p>Hindi man po namin laging pinapakita, pero we see your effort. We appreciate your patience, your kindness, and the way you continue to guide us kahit hindi kami perfect na students. Someday, baka makalimutan na namin yung ibang lessons sa school, pero maaalala po namin yung mga values and good morals na tinuturo mo po saamin.</p>
+
+        <p>You're not just teaching us Values Education, you're teaching us how to live with values in our hearts, loveu ma'am!</p>
+
+        <p class="signature">Happy Teacher's Day, ma'am!</p>
+
+        <p class="credit">Coded by Adrielle</p>
+
+        <button class="back-btn" onclick="goBack()">&lt; back</button>
+    </div>
+
+    <script>
+        function showCard() {
+            document.getElementById('welcome-screen').classList.add('hidden');
+            document.getElementById('card-screen').classList.remove('hidden');
+        }
+
+        function goBack() {
+            document.getElementById('card-screen').classList.add('hidden');
+            document.getElementById('welcome-screen').classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
